@@ -1,33 +1,35 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, ScrollView } from 'react-native';
 
 class TodoScreen extends React.Component {
     static navigationOptions = {
-        title: 'To Do',
+        title: 'ABOUT',
       };
     render() {
         return (
-            <View style={{ flex: 1, flexDirection: 'colomn' }}>
-        <View 
-            style={{
-                width: 150, 
-                height: 200, 
-                backgroundColor: 'powderblue' }} 
-        />
-        <View 
-            style={{
-                width: 50, 
-                height: 50, 
-                backgroundColor: 'skyblue' }} 
-        />
-        <View  
-            style={{
-                width: 50, 
-                height: 50, 
-                backgroundColor: 'steelblue' }} 
-        />
-      </View>
+            <ScrollView>
+                <View style={styles.container1} />
+                <View style={styles.container2} />
+                <View style={styles.container3} />
+            
+            </ScrollView>
+            
         );
     }
 }
+
+const styles = StyleSheet.create({
+    container1: {
+        padding: 100, 
+        backgroundColor: 'blue'
+    },
+    container2: {
+        padding: 100, 
+        backgroundColor: 'red'
+    },
+    container3: {
+        padding: 100, 
+        backgroundColor: 'yellow'
+    }
+});
 export default TodoScreen;

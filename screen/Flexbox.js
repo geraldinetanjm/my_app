@@ -6,7 +6,7 @@ class FlexboxScreen extends React.Component {
         title: 'Flexbox',
       };
     render() {
-        return (<Text>Flexbox</Text>);
+        return (<Text>MORE</Text>);
     }
 }
 export default FlexboxScreen;

@@ -18,7 +18,7 @@ import Flexbox from './screen/Flexbox';
       <Header textIwant='Welcome' />
   <View style={{ padding: 10 }} />
       <Header textIwant={'About'} /> 
-   <View style={{ padding: 15, backgroundColor: 'white' }} />  
+   <View style={{ padding: 0, backgroundColor: 'white' }} />  
       <Header />
       <Avatar    
       xlarge
@@ -30,11 +30,11 @@ import Flexbox from './screen/Flexbox';
     <View style={{ padding: 10 }} />
         <Text style={styles.bigblue}>GERALDINE</Text>
         <Button
-          title="Go to Todo"
+          title="ABOUT"
           onPress={() => this.props.navigation.navigate('TodoScreen')}
         />
         <Button
-          title="Go to Flexbox"
+          title="MORE"
           onPress={() => this.props.navigation.navigate('FlexboxScreen')}
         />
       </View>
