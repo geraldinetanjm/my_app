@@ -5,6 +5,8 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 import Header from './components/header';
 import Todo from './screen/Todo';
 import Flexbox from './screen/Flexbox';
+// eslint-disable-next-line import/newline-after-import
+import Finalproject from './screen/Finalproject';
 
  class App extends React.Component {
   static navigationOptions = {
@@ -37,7 +39,11 @@ import Flexbox from './screen/Flexbox';
           title="MORE"
           onPress={() => this.props.navigation.navigate('FlexboxScreen')}
         />
-      </View>
+        <Button
+          title="FINAL PROJECT"
+          onPress={() => this.props.navigation.navigate('FinalProjectScreen')}
+        />
+    </View>
 
     );
   }
@@ -46,6 +52,7 @@ const AppNavigator = createStackNavigator({
   Home: App, //Home page: the first start page 
   TodoScreen: Todo, //Todo page: the second page which you will navigate to 
   FlexboxScreen: Flexbox,
+  FinalProjectScreen: Finalproject
   });
 
 const AppContainer = createAppContainer(AppNavigator);

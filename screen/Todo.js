@@ -43,7 +43,9 @@ const sections = [
             ] 
         },
 
-    { id: 1, title: 'Section 2', 
+    { 
+        id: 1, 
+        title: 'Section 2', 
         data: 
         [
             { id: 3, text: 'Item 4' }, 
